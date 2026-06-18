@@ -7,6 +7,8 @@
   ],
   "routes": [
     { "handle": "filesystem" },
+    { "src": "/firebase-config.js", "dest": "/public/firebase-config.js" },
+    { "src": "/public/(.*)", "dest": "/public/$1" },
     { "src": "/.*", "dest": "/index.html" }
   ]
 }
